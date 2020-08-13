@@ -43,13 +43,13 @@ cd hisat2
 if test ! -f "$BUILT"; then
     if test ! -f "$DOWNLOADED"; then
         echo "> Gathering Module"
-        git sumbodule init
+        git submodule init
         git submodule update
 
     fi
 
     echo "> Initiating Build"
-    make hisat2-align-s hisat2-build-s hisat2-inspect-section
+    make hisat2-align-s hisat2-build-s hisat2-inspect-s
 fi
 
 # Return to hisatgenotype directory
